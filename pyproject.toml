@@ -1,0 +1,25 @@
+[project]
+name = "daemon"
+version = "0.1.0"
+description = "VGPK schema downloader and database updater"
+authors = [{ name = "VodoGamer", email = "vodogamer@yandex.ru" }]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ruff>=0.4.4",
+    "pyright>=1.1.363",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
