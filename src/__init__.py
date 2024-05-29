@@ -1,2 +1,3 @@
-def hello() -> str:
-    return "Hello from daemon!"
+from src.endpoint import app
+
+__all__ = ["app"]
